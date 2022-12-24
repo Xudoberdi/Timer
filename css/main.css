@@ -1,0 +1,97 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #202020;
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: var(--color-white);
+}
+body {
+  background-image: url(../images/bear.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 4em;
+}
+.heading h1 {
+  box-shadow: var(--color-shadow);
+  font-size: 6.2em;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+.heading h3 {
+  font-size: 1.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--color-glass);
+  backdrop-filter: blur(12px);
+  padding: 9px 33px;
+  display: inline-block;
+}
+.countdawn {
+  width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.box {
+  width: 28vmin;
+  height: 33vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+span.num {
+  background-color: var(--color-glass);
+  backdrop-filter: blur(12px);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--color-shadow);
+  font-size: 4.2em;
+  box-shadow: var(--color-shadow);
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+}
+span.num:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  background-color: var(--color-glass);
+}
+span.text {
+  font-size: 1.1em;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: 0.15em;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  bottom: 17px;
+  padding: 0.7em 0;
+  font-weight: 600;
+  box-shadow: var(--color-shadow);
+}
