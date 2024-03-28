@@ -3,7 +3,7 @@ let hrBox = document.getElementById("hr-box");
 let minBox = document.getElementById("min-box");
 let secBox = document.getElementById("sec-box");
 
-let endDate = new Date(2023, 0, 01, 00, 00);
+let endDate = new Date(2025, 0);
 let endTime = endDate.getTime();
 
 function countDawn() {
